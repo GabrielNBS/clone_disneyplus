@@ -9,11 +9,26 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--secundary" href="#">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As Melhores histórias em um só lugar.
             </h3>
@@ -235,7 +250,7 @@
     <section class="faq">
         <h2 class="title">Perguntas frequentes</h2>
         <ul class="faq__questions">
-            <li class="faq__questions__item faq__questions__item--is-open">
+            <li class="faq__questions__item">
                 <div class="faq__questions__item__question " data-faq-question>
                     O que está incluído no Disney+?
                 </div>
