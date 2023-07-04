@@ -20,6 +20,10 @@
                 position: relative;
                 cursor: pointer;
 
+                @media (max-width: 768px) {
+                    font-size: 15px;
+                }
+
                 &::after {
                     content: '+';
                     position: absolute;
@@ -37,14 +41,26 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: height, .5s ease;
+                
+                p {
+                    @media (max-width: 768px) {
+                        font-size: 15px;
+                    }
 
                 ul {
 
+                    @media (max-width: 768px) {
+                        font-size: 15px;
+                    }
+
+                    
                     li {
                         padding-left: 40px;
                         margin-top: 16px;
                         list-style: disc;
                         list-style-position: inside;
+                    
+                        }
                     }
                 }
             }
@@ -53,7 +69,8 @@
 
                 .faq__questions__item__question::after {
                     content: '-';
-                } 
+                }
+
                 .faq__questions__item__answer {
                     height: auto;
                     padding-bottom: 24px;
